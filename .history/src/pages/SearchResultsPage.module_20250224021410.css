@@ -1,0 +1,15 @@
+.results {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #121212;
+    height: cal(100% - 30px);
+}
+
+.movieList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}

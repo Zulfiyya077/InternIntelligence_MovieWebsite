@@ -1,0 +1,58 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2f2f3d; /* Daha qaranlıq bir fon */
+    padding: 20px 40px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sıx kölgə əlavə edildi */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #1a1a2e; /* Navbar-ın hover effekti */
+}
+
+.logo a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo a:hover {
+    transform: scale(1.1); /* Hover effekti ilə logo böyüyəcək */
+    color: #ffcc00; /* Hoverda logo rəngi dəyişir */
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navLinks li {
+    position: relative;
+}
+
+.navLinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #ffcc00;
+    transform: translateY(-5px); /* Hoverda yuxarı doğru hərəkət edir */
+}
+
+/

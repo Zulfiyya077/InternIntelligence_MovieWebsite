@@ -1,0 +1,48 @@
+.about {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to right, rgba(18, 18, 18, 0.8), rgba(0, 0, 0, 0.7)), url('your-image-url.jpg') no-repeat center center/cover;
+    height: 100vh; /* Bütün ekranı tutacaq */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background 0.5s ease-in-out; /* Arka fon dəyişmə animasiyası */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out; /* Fade-in animasiyası */
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    animation: fadeIn 3s ease-out; /* Fade-in animasiyası */
+}
+
+/* Arka fonun animasiya ilə dəyişməsi */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 1.8rem;
+    }
+    .about p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}

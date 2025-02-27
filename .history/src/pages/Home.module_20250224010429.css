@@ -1,0 +1,6 @@
+/* src/pages/Home.module.css */
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

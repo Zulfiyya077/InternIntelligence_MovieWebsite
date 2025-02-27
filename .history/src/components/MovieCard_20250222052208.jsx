@@ -1,0 +1,20 @@
+import { Link } from 'react-router-dom';
+import styles from '../styles/MovieCard.module.css';
+
+const MovieCard = ({ movie }) => {
+  return (
+    <div className={styles.card}>
+      <img
+        className={styles.image}
+        src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+        alt={movie.title}
+      />
+      <h3 className={styles.title}>{movie.title}</h3>
+      <Link to={`/movie/${movie.id}`} className={styles.detailsLink}>
+        Details
+      </Link>
+    </div>
+  );
+};
+
+export default MovieCard;

@@ -1,0 +1,131 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2f2f3d; 
+    padding: 10px 100px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    height: 100px;
+}
+
+.navbar:hover {
+    background-color: #1a1a2e;
+}
+
+.logo a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo a:hover {
+    transform: scale(1.1); /* Hover effekti ilə logo böyüyəcək */
+    color: #ffcc00; /* Hoverda logo rəngi dəyişir */
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navLinks li {
+    position: relative;
+}
+
+.navLinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #ffcc00;
+    transform: translateY(-5px); /* Hoverda yuxarı doğru hərəkət edir */
+}
+
+/* Underline hover animation */
+.navLinks li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s, left 0.3s;
+    transform: translateX(0%);
+}
+
+.navLinks li a:hover::after {
+    width: 100%; /* Hover edildikdə alt xətt tam görünür */
+    left: 0;
+}
+
+/* Animation for navbar items */
+.navLinks li {
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.navLinks li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.navLinks li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.navLinks li:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.navLinks li:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+/* FadeInUp animation for nav items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 25px;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .logo a {
+        font-size: 1.8rem;
+    }
+
+    .navLinks li a {
+        font-size: 1.2rem;
+    }
+}

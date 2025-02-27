@@ -1,0 +1,37 @@
+
+/* src/App.module.css */
+:root {
+  --navbar-background: #fff;
+  --navbar-color: #000;
+  --button-background: #4CAF50;
+  --button-color: #fff;
+  --button-hover-background: #45a049;
+  --background: #fff;
+  --color: #000;
+}
+
+body.dark {
+  --navbar-background: #222;
+  --navbar-color: #fff;
+  --button-background: #333;
+  --button-color: #fff;
+  --button-hover-background: #444;
+  --background: #121212;
+  --color: #fff;
+}
+
+body.light {
+  --navbar-background: #fff;
+  --navbar-color: #000;
+  --button-background: #4CAF50;
+  --button-color: #fff;
+  --button-hover-background: #45a049;
+  --background: #fff;
+  --color: #000;
+}
+
+.app {
+  background-color: var(--background);
+  color: var(--color);
+  min-height: 100vh;
+}

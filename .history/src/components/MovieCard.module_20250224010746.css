@@ -1,0 +1,23 @@
+/* src/components/MovieCard.module.css */
+.movie-card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card.blur {
+    filter: blur(5px);  /* Diğer filmleri bulanık yapıyoruz */
+}
+
+.movie-card.selected {
+    transform: scale(1.05);  /* Seçilen film biraz daha büyük olacak */
+    z-index: 2;  /* Seçilen filmi öne alır */
+}

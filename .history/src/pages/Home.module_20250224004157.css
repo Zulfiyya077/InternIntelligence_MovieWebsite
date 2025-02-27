@@ -1,0 +1,15 @@
+/* src/pages/Home.module.css */
+.home {
+    padding: 20px;
+    text-align: center;
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieList .card {
+    margin: 10px;
+}

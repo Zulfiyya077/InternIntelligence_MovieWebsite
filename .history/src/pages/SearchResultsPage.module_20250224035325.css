@@ -1,0 +1,41 @@
+.results {
+    text-align: center;
+    padding: 20px;
+}
+
+.filterContainer {
+    margin-bottom: 20px;
+}
+
+.filterContainer label {
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px;
+}
+
+.filterSelect {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filterSelect:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+.movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movieList p {
+    color: white;
+}
